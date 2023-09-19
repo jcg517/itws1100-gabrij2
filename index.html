@@ -1,13 +1,103 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/30e240c628.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="navbar">
+      <ul class="navlist">
+        <li><a class="nav-link" href="#about-page">About</a></li>
+        <li><a class="nav-link" href="#projects-page">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
 
-<head>
+    <div id="landing-page">
+      <h1>
+        Hi, <br />
+        I'm Jesse
+      </h1>
+    </div>
 
-</head>
+    <div id="about-page" class="content">
+      <h2>About Me:</h2>
+      <div id="profile-container">
+        <img
+          src="imgs/profile.jpg"
+          alt="Picture of a reflection of my face in a spoon"
+          class="profile-img"
+        />
+        <div class="profile-text-container">
+          <div class="profile-textbox">
+            <p class="profile-text">Name: Jesse, Age: 19, From: NYC</p>
+          </div>
+          <div class="profile-textbox">
+            <p class="profile-text">
+              I am a student at Rensselaer Polytechnic Institute studying
+              Computer Science, Information Technology and Web Science, and
+              Business Management
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="projects-page" class="content">
+      <h2>Some Things I've Worked On</h2>
+      <div class="projects-container">
+        <div class="project-box">
+          <p class="project-header">Lab 2:</p>
+          <a href="labs/lab2/gabrij2-JesseGabriel-resume.html" target="_blank"
+            ><img
+              class="project-img"
+              src="imgs/resume.png"
+              alt="Picture of my Resume"
+            />
+            <p class="project-footer">RESUME</p>
+          </a>
+        </div>
+      </div>
+      <div class="btn-container">
+        <a href="labs/lab3/projects.html" target="_blank" class="btn"
+          >See All Projects</a
+        >
+      </div>
+    </div>
+    <div id="contact" class="content">
+      <h2>Contact Me</h2>
+      <div class="contact-links">
+        <a
+          href="https://www.linkedin.com/in/jesse-gabriel-975857179/"
+          target="_blank"
+          class="contact-details"
+          ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+        >
+        <a
+          id="profile-link"
+          href="https://github.com/wert18784"
+          target="_blank"
+          class="contact-details"
+          ><i class="fa-brands fa-github"></i> GitHub</a
+        >
 
-<body>
+        <a href="mailto:gabrij2@rpi.edu" class="contact-details"
+          ><i class="fas fa-at"></i> Email</a
+        >
+        <a href="#" onclick="alert('917-993-1459');" class="contact-details"
+          ><i class="fas fa-mobile-alt"></i> Phone</a
+        >
+      </div>
+    </div>
 
-<p>Hello World!</p>
-
-</body>
-
+    <div id="footer">
+      <span class="footer-text">© Jesse Gabriel. All rights reserved.</span>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
