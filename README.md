@@ -1,3 +1,4 @@
+(LAB 3)
 http://gabrij2rpi.eastus.cloudapp.azure.com/iit/
 
 For this lab I tried a lot of new things with css and javascript so my site may be a little bit janky. Overall the its a good starting point. I need to populate the site with more content, especially the profile and projects section. I also plan to add animations to make it feel more smooth. When I have more projects to add to my portfolio, I would want to make that section better maybe with some horizontal scrolling and animations.
