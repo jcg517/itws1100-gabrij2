@@ -9,7 +9,7 @@
   z-index: 1000;
   position: fixed;
   top: 0;
-  display: none;
+  display: block;
   width: 100%;
   height: 50px;
   background-color: #25272e;
@@ -42,7 +42,7 @@
 
 
 #footer {
-  display: none;
+  display: block;
   position: static;
   bottom: 0;
   left: 0;
@@ -65,7 +65,7 @@
 }
 
 
-#landing-page {
+/* #landing-page {
   font: 1em sans-serif;
   color: aliceblue;
   background-color: black;
@@ -75,7 +75,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-}
+} */
 
 
 #about-page {
@@ -158,7 +158,7 @@
 
 .content {
   z-index: 0;
-  display: none;
+  display: block;
   position: static;
   height: 100vh;
   overflow: hidden;

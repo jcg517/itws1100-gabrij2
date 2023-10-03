@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>My RSS Feed</title>
+  <subtitle>Web Content I selected</subtitle>
+  <link href="http://localhost/"/>
+  <id>http://localhost/</id>
+  <updated>2023-10-01T00:00:00Z</updated>
+
+  <entry>
+    <title>‘Mind-boggling’ sea creature spotted off Japan has finally been identified</title>
+    <link href="https://www.science.org/content/article/mind-boggling-sea-creature-spotted-japan-has-finally-been-identified"/>
+    <id>https://www.science.org/content/article/mind-boggling-sea-creature-spotted-japan-has-finally-been-identified</id>
+    <published>2010-10-12T00:45:00Z</published>
+    <updated>2010-10-12T00:45:00Z</updated>
+    <summary>Tiny, flittering swimmer wasn’t a worm, a mollusk, or a crustacean. What was it?</summary>
+    <author>
+      <name>ERIK STOKSTAD</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Never Install Locally</title>
+    <link href="https://www.youtube.com/watch?v=J0NuOlA2xDc"/>
+    <id>https://www.youtube.com/watch?v=J0NuOlA2xDc</id>
+    <published>2023-04-27T00:00:00Z</published>
+    <updated>2023-04-27T00:00:00Z</updated>
+    <summary>Containers are a game-changing tool for app development and deployment...</summary>
+    <author>
+      <name>Coderized</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>Erdős–Rényi model</title>
+    <link href="https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93R%C3%A9nyi_model"/>
+    <id>https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93R%C3%A9nyi_model</id>
+    <published>2023-05-18T07:32:00Z</published>
+    <updated>2023-05-18T07:32:00Z</updated>
+    <summary>In the mathematical field of graph theory, the Erdős–Rényi model refers to...</summary>
+    <author>
+      <name>Various Contributors</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>In Rainbows</title>
+    <link href="https://open.spotify.com/album/5vkqYmiPBYLaalcmjujWxK"/>
+    <id>https://open.spotify.com/album/5vkqYmiPBYLaalcmjujWxK</id>
+    <published>2007-10-10T00:00:00Z</published>
+    <updated>2007-10-10T00:00:00Z</updated>
+    <summary>In Rainbows is the seventh studio album by the English rock band Radiohead...</summary>
+    <author>
+      <name>Radiohead</name>
+    </author>
+  </entry>
+
+  <entry>
+    <title>The Night Shift, Me, Watercolor, 2020</title>
+    <link href="https://www.reddit.com/r/Art/comments/jx10ov/the_night_shift_me_watercolor_2020/"/>
+    <id>https://www.reddit.com/r/Art/comments/jx10ov/the_night_shift_me_watercolor_2020/</id>
+    <published>2020-11-19T11:24:09Z</published>
+    <updated>2020-11-19T11:24:09Z</updated>
+    <summary>A cool piece of art I found.</summary>
+    <author>
+      <name>u/onewordpoet</name>
+    </author>
+  </entry>
+
+</feed>

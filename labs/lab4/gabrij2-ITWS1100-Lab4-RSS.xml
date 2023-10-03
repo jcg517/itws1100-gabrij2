@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>My RSS Feed</title>
+    <description>Web Content I selected</description>
+    <link>http://localhost/</link>
+    <item>
+      <title>‘Mind-boggling’ sea creature spotted off Japan has finally been identified</title>
+      <description>Tiny, flittering swimmer wasn’t a worm, a mollusk, or a crustacean. What was it?</description>
+      <link>https://www.science.org/content/article/mind-boggling-sea-creature-spotted-japan-has-finally-been-identified</link>
+      <guid>https://www.science.org/content/article/mind-boggling-sea-creature-spotted-japan-has-finally-been-identified</guid>
+      <pubDate>Tue, 12 Oct 2010 00:45:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Never Install Locally</title>
+      <description>Containers are a game-changing tool for app development and deployment, offering isolated, portable environments that include code, libraries, and OS. Unlike virtual machines (VMs), containers are lightweight and share the host system's kernel, making them faster and more resource-efficient.</description>
+      <link>https://www.youtube.com/watch?v=J0NuOlA2xDc</link>
+      <guid>https://www.youtube.com/watch?v=J0NuOlA2xDc</guid>
+      <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Erdős–Rényi model</title>
+      <description>In the mathematical field of graph theory, the Erdős–Rényi model refers to one of two closely related models for generating random graphs or the evolution of a random network.</description>
+      <link>https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93R%C3%A9nyi_model</link>
+      <guid>https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93R%C3%A9nyi_model</guid>
+      <pubDate>Thu, 18 May 2023 07:32:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>In Rainbows</title>
+      <description>In Rainbows is the seventh studio album by the English rock band Radiohead. It was self-released on 10 October 2007 as a pay-what-you-want download, followed by a physical release internationally through XL Recordings on 3 December 2007 and in North America through TBD Records on 1 January 2008. It was Radiohead's first release after their recording contract with EMI ended with their album Hail to the Thief (2003).</description>
+      <link>https://open.spotify.com/album/5vkqYmiPBYLaalcmjujWxK</link>
+      <guid>https://open.spotify.com/album/5vkqYmiPBYLaalcmjujWxK</guid>
+      <pubDate>Wed, 10 Oct 2007 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>The Night Shift, Me, Watercolor, 2020</title>
+      <description>A cool piece of art I found.</description>
+      <link>https://www.reddit.com/r/Art/comments/jx10ov/the_night_shift_me_watercolor_2020/</link>
+      <guid>https://www.reddit.com/r/Art/comments/jx10ov/the_night_shift_me_watercolor_2020/</guid>
+      <pubDate>Thu, 19 Nov 2020 06:24:09 -0500</pubDate>
+    </item>
+  </channel>
+</rss>
