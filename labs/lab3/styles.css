@@ -35,6 +35,8 @@
 
 }
 
+
+
 .contact-details:hover,
 .nav-link:hover {
   border-radius: var(--elem-radius);
@@ -70,31 +72,53 @@ button {
 }
 
 
-#projects-page {
-  height: calc(100vh - 60px);
-  background-image: conic-gradient(from 90deg at -10% 100%, #2b303b 0deg, #2b303b 90deg, #16181d 1turn);
-}
+
 
 
 .content {
-
-  z-index: 0;
-  position: static;
-  height: 100vh;
-  overflow: hidden;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding-top: 5%;
   width: 100%;
+  height: 100%;
+
+  /* min-height: calc(150vh - 60px); */
+  background-image: conic-gradient(from 90deg at -10% 100%, #2b303b 0deg, #2b303b 90deg, #16181d 1turn);
 }
 
-.project-box {
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 5% auto;
+  width: 1000px;
+
+}
+
+.project-footer {
+  margin: auto auto 10% auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  color: aliceblue;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
   width: 300px;
   height: 400px;
   background-color: white;
   border-radius: 10px;
-  margin: 0 auto;
-  margin-top: 100px;
+  margin: 1.5%;
   background-color: rgb(130, 131, 146);
+}
+
+.project-card:hover {
+  border: 2px solid #e381c3
 }
 
 
@@ -109,14 +133,18 @@ button {
   margin-bottom: 10px;
 }
 
-.project-header,
-.project-footer {
+.project-header {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
   font-weight: 600;
   font-size: 24px;
   color: aliceblue;
+}
+
+.project-footer {
+  margin-top: auto;
+  align-self: flex-end;
 }
 
 h2 {
@@ -126,7 +154,6 @@ h2 {
   color: white;
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 50px;
   text-shadow: 2px 2px 1px #8cff9a;
 }
 
