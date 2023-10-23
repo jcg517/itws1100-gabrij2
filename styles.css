@@ -30,7 +30,6 @@
   font-weight: 600;
   margin-right: 1.5em;
   padding: .5rem;
-
 }
 
 .contact-details:hover,
@@ -39,7 +38,6 @@
   background-color: #d05bea30;
   color: #e381c3;
 }
-
 
 #footer {
   display: block;
