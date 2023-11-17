@@ -12,18 +12,17 @@
 <h1>PHP &amp; MySQL</h1>
 
 <?php include('includes/menubody.inc.php'); ?>
-
 <?php
   // We'll need a database connection both for retrieving records and for
   // inserting them.  Let's get it up front and use it for both processes
   // to avoid opening the connection twice.  If we make a good connection,
   // we'll change the $dbOk flag.
   $dbOk = false;
-
+  
   /* Create a new database connection object, passing in the host, username,
-     password, and database to use. The "@" suppresses errors. */
-  @ $db = new mysqli('localhost', 'root', 'root', 'iit');
-
+  password, and database to use. The "@" suppresses errors. */
+  @ $db = new mysqli('localhost', 'root', 'DAMphe#1878*', 'iit');
+  
   if ($db->connect_error) {
     echo '<div class="messages">Could not connect to the database. Error: ';
     echo $db->connect_errno . ' - ' . $db->connect_error . '</div>';
@@ -42,35 +41,35 @@
     // Get the output and clean it for output on-screen.
     // First, let's get the output one param at a time.
     // Could also output escape with htmlentities()
-    $firstNames = htmlspecialchars(trim($_POST["firstNames"]));
-    $lastName = htmlspecialchars(trim($_POST["lastName"]));
-    $dob = htmlspecialchars(trim($_POST["dob"]));
+    $firstName = htmlspecialchars(trim($_POST["first_name"]));
+    $lastName = htmlspecialchars(trim($_POST["last_name"]));
+    $birthdate = htmlspecialchars(trim($_POST["birthdate"]));
 
     // special handling for the date of birth
-    $dobTime = strtotime($dob); // parse the date of birth into a Unix timestamp (seconds since Jan 1, 1970)
+    $birthdateTime = strtotime($birthdate); // parse the date of birth into a Unix timestamp (seconds since Jan 1, 1970)
     $dateFormat = 'Y-m-d'; // the date format we expect, yyyy-mm-dd
-    // Now convert the $dobTime into a date using the specfied format.
+    // Now convert the $birthdateTime into a date using the specfied format.
     // Does the outcome match the input the user supplied?
-    // The right side will evaluate true or false, and this will be assigned to $dobOk
-    $dobOk = date($dateFormat, $dobTime) == $dob;
+    // The right side will evaluate true or false, and this will be assigned to $birthdateOk
+    $birthdateOk = date($dateFormat, $birthdateTime) == $birthdate;
 
     $focusId = ''; // trap the first field that needs updating, better would be to save errors in an array
 
-    if ($firstNames == '') {
+    if ($firstName == '') {
       $errors .= '<li>First name may not be blank</li>';
-      if ($focusId == '') $focusId = '#firstNames';
+      if ($focusId == '') $focusId = '#first_name';
     }
     if ($lastName == '') {
       $errors .= '<li>Last name may not be blank</li>';
-      if ($focusId == '') $focusId = '#lastName';
+      if ($focusId == '') $focusId = '#last_name';
     }
-    if ($dob == '') {
+    if ($birthdate == '') {
       $errors .= '<li>Date of birth may not be blank</li>';
-      if ($focusId == '') $focusId = '#dob';
+      if ($focusId == '') $focusId = '#birthdate';
     }
-    if (!$dobOk) {
+    if (!$birthdateOk) {
       $errors .= '<li>Enter a valid date in yyyy-mm-dd format</li>';
-      if ($focusId == '') $focusId = '#dob';
+      if ($focusId == '') $focusId = '#birthdate';
     }
 
     if ($errors != '') {
@@ -87,22 +86,22 @@
         // Let's trim the input for inserting into mysql
         // Note that aside from trimming, we'll do no further escaping because we
         // use prepared statements to put these values in the database.
-        $firstNamesForDb = trim($_POST["firstNames"]);
-        $lastNameForDb = trim($_POST["lastName"]);
-        $dobForDb = trim($_POST["dob"]);
+        $firstNameForDb = trim($_POST["first_name"]);
+        $lastNameForDb = trim($_POST["last_name"]);
+        $birthdateForDb = trim($_POST["birthdate"]);
 
         // Setup a prepared statement. Alternately, we could write an insert statement - but
         // *only* if we escape our data using addslashes() or (better) mysqli_real_escape_string().
-        $insQuery = "insert into actors (`last_name`,`first_names`,`dob`) values(?,?,?)";
+        $insQuery = "insert into actors (`last_name`,`first_name`,`birthdate`) values(?,?,?)";
         $statement = $db->prepare($insQuery);
         // bind our variables to the question marks
-        $statement->bind_param("sss",$lastNameForDb,$firstNamesForDb,$dobForDb);
+        $statement->bind_param("sss",$lastNameForDb,$firstNameForDb,$birthdateForDb);
         // make it so:
         $statement->execute();
 
         // give the user some feedback
         echo '<div class="messages"><h4>Success: ' . $statement->affected_rows . ' actor added to database.</h4>';
-        echo $firstNames . ' ' . $lastName . ', born ' . $dob . '</div>';
+        echo $firstName . ' ' . $lastName . ', born ' . $birthdate . '</div>';
 
         // close the prepared statement obj
         $statement->close();
@@ -116,14 +115,14 @@
   <fieldset>
     <div class="formData">
 
-      <label class="field" for="firstNames">First Name(s):</label>
-      <div class="value"><input type="text" size="60" value="<?php if($havePost && $errors != '') { echo $firstNames; } ?>" name="firstNames" id="firstNames"/></div>
+      <label class="field" for="first_name">First Name(s):</label>
+      <div class="value"><input type="text" size="60" value="<?php if($havePost && $errors != '') { echo $firstName; } ?>" name="first_name" id="first_name"/></div>
 
-      <label class="field" for="lastName">Last Name:</label>
-      <div class="value"><input type="text" size="60" value="<?php if($havePost && $errors != '') { echo $lastName; } ?>" name="lastName" id="lastName"/></div>
+      <label class="field" for="last_name">Last Name:</label>
+      <div class="value"><input type="text" size="60" value="<?php if($havePost && $errors != '') { echo $lastName; } ?>" name="last_name" id="last_name"/></div>
 
-      <label class="field" for="dob">Date of Birth:</label>
-      <div class="value"><input type="text" size="10" maxlength="10" value="<?php if($havePost && $errors != '') { echo $dob; } ?>" name="dob" id="dob"/> <em>yyyy-mm-dd</em></div>
+      <label class="field" for="birthdate">Date of Birth:</label>
+      <div class="value"><input type="text" size="10" maxlength="10" value="<?php if($havePost && $errors != '') { echo $birthdate; } ?>" name="birthdate" id="birthdate"/> <em>yyyy-mm-dd</em></div>
 
       <input type="submit" value="save" id="save" name="save"/>
     </div>
@@ -148,9 +147,9 @@
         echo "\n".'<tr class="odd" id="actor-' . $record['actorid'] . '"><td>';
       }
       echo htmlspecialchars($record['last_name']) . ', ';
-      echo htmlspecialchars($record['first_names']);
+      echo htmlspecialchars($record['first_name']);
       echo '</td><td>';
-      echo htmlspecialchars($record['dob']);
+      echo htmlspecialchars($record['birthdate']);
       echo '</td><td>';
       echo '<img src="resources/delete.png" class="deleteActor" width="16" height="16" alt="delete actor"/>';
       echo '</td></tr>';
