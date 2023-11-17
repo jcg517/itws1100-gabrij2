@@ -26,5 +26,12 @@
     "img": "https://cdn-icons-png.flaticon.com/512/3767/3767084.png",
     "link": "../lab6/lab6.html",
     "tooltip": "Using Jquery to make a page dynamic"
+  },
+  {
+    "labNumber": 9,
+    "name": "PHP & MySQL",
+    "img": "https://cdn-icons-png.flaticon.com/512/3767/3767084.png",
+    "link": "../lab9/index.php",
+    "tooltip": "Using PHP and MariaDB to make a movie database"
   }
 ]
