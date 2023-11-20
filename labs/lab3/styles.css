@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   font-family: Optimistic Display, -apple-system, ui-sans-serif, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-
 }
 
 #navbar {
@@ -23,8 +22,6 @@
   display: flex;
   margin-top: 17px;
   list-style-type: none;
-
-
 }
 
 .nav-link {
@@ -32,9 +29,7 @@
   font-weight: 600;
   margin-right: 1.5em;
   padding: .5rem;
-
 }
-
 
 
 .contact-details:hover,
@@ -72,9 +67,6 @@ button {
 }
 
 
-
-
-
 .content {
   display: flex;
   flex-direction: column;
@@ -93,7 +85,7 @@ button {
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 5% auto;
+  margin: 0 auto 0 auto;
   width: 1000px;
 
 }
@@ -114,7 +106,7 @@ button {
   background-color: white;
   border-radius: 10px;
   margin: 1.5%;
-  background-color: rgb(130, 131, 146);
+  background-color: #595d78;
 }
 
 .project-card:hover {
@@ -148,12 +140,11 @@ button {
 }
 
 h2 {
-
   font-weight: 600;
   font-size: 52px;
   color: white;
   text-align: center;
-  margin-top: 50px;
+  margin: 2% auto;
   text-shadow: 2px 2px 1px #8cff9a;
 }
 

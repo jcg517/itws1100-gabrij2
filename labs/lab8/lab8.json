@@ -33,5 +33,12 @@
     "img": "https://cdn-icons-png.flaticon.com/512/3767/3767084.png",
     "link": "../lab9/index.php",
     "tooltip": "Using PHP and MariaDB to make a movie database"
+  },
+  {
+    "labNumber": 10,
+    "name": "RSS / ATOM Reader",
+    "img": "https://cdn-icons-png.flaticon.com/512/3767/3767084.png",
+    "link": "../lab10/lab10.html",
+    "tooltip": ""
   }
 ]
