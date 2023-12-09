@@ -1,14 +1,12 @@
-(LAB 3)
-http://gabrij2rpi.eastus.cloudapp.azure.com/iit/
+Take Home Quiz:
 
-For this lab I tried a lot of new things with css and javascript so my site may be a little bit janky. Overall the its a good starting point. I need to populate the site with more content, especially the profile and projects section. I also plan to add animations to make it feel more smooth. When I have more projects to add to my portfolio, I would want to make that section better maybe with some horizontal scrolling and animations.
+Conn.inc.php is where the database connection code is written and it is included whenever a dynamic php page needs to query the database.
 
-I used these sites for inspiration for the layout of my site.
-https://personal-portfolio.freecodecamp.rocks/#projects
-https://www.david-hckh.com/
+The new IA of the the site (now made dynamic with php and mysql) has 4 new php files, each representing a page. Index.php replaces index.html, and is the landing point for all other pages in the site. Labs.php is the replacement for the labs html file in lab 8. It connects to the mylabs database and querys all it for the lab information. The projects.php page is a mirror of the labs page but with a different database, currently only holding our group's project.
 
-I also used some styles and colors from the react documention website.
+All of these new pages are now what are linked to in the navbar instead of the old static html pages. The navbar and other html features are written in one place: the /includes directory, and they are imported into whichever php file they are needed in.
 
-I also used chatGPT for some css help, mainly with flexbox and alignments.
+The fourth page is the login.php page. A button for this page only appears on the index page, if the global session variable: \_SESSION['loggedInUser'], is not set. Within the login page is a form with username and password. If a username and password that is within the mysiteusers database table is inputted (admin, password), the session variable will be set.
 
-Also my project html folder is in the lab3 folder and uses a different css file (because of the landing page javascript) whereas my index.html is in the root, which might cause some confusion for the submission and understanding the link structure.
+When the session variable is set, the user will no longer see the login button on the landing page. They will see a welcome message with their username and a new button called log out that when clicked will reset the session. When a user is logged in, 2 new forms appear on the labs page.
+One is for deleting a lab, provided the lab number/id. The other is a form for adding new labs with inputs for: id, name, link, image and description.

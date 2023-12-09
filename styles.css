@@ -5,6 +5,7 @@
   font-family: Optimistic Display, -apple-system, ui-sans-serif, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
+
 #navbar {
   z-index: 1000;
   position: fixed;
@@ -62,31 +63,17 @@
   width: 50px;
 }
 
-
-/* #landing-page {
-  font: 1em sans-serif;
-  color: aliceblue;
-  background-color: black;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-} */
-
-
-#about-page {
-  margin-top: 50px;
-  background-color: #3b4150;
+.logout {
+  margin-left: 50vw;
 }
+
 
 
 #profile-container {
   display: flex;
   align-items: flex-start;
   width: 70%;
-  height: 70%;
+  height: 45%;
   border-radius: 15px;
   background-color: #363344;
   margin-left: 15%;
@@ -118,6 +105,7 @@
   margin: 1%;
 }
 
+.login-text,
 .profile-text {
   text-align: center;
   font-weight: 500;
@@ -140,13 +128,6 @@
 }
 
 
-#projects-page {
-  position: relative;
-  background-image: conic-gradient(from 90deg at -10% 100%, #2b303b 0deg, #2b303b 90deg, #16181d 1turn);
-
-
-}
-
 #contact {
   border-color: rgba(246, 247, 249, .05);
   background-image: conic-gradient(from -90deg at 110% 100%, #2b303b 0deg, #16181d 90deg, #16181d 1turn);
@@ -154,10 +135,14 @@
 
 }
 
+.logout {
+  display: inline-block;
+}
+
 .content {
-  z-index: 0;
-  display: block;
-  position: static;
+  /* margin-top: 200px; */
+  background-image: conic-gradient(from 90deg at -10% 100%, #2b303b 0deg, #2b303b 90deg, #16181d 1turn);
+  /* display: block; */
   height: 100vh;
   overflow: hidden;
   padding-top: 0px;
@@ -225,4 +210,31 @@ h1 {
 .contact-details {
   color: aliceblue;
   margin-right: 20px;
+}
+
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label,
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea,
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }

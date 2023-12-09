@@ -1,0 +1,77 @@
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 5% auto;
+  width: 1000px;
+
+}
+
+.project-footer {
+  margin: auto auto 10% auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  color: aliceblue;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 1.5%;
+  background-color: rgb(130, 131, 146);
+}
+
+.project-card:hover {
+  border: 2px solid #e381c3
+}
+
+
+.project-img {
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: inherit;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.project-header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  color: aliceblue;
+}
+
+.project-footer {
+  margin-top: auto;
+  align-self: flex-end;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 52px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 2px 2px 1px #8cff9a;
+}
+
+h1 {
+  font-size: larger;
+  margin: 25px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+}
