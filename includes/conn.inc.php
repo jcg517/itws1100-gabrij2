@@ -1,6 +1,6 @@
 <?php
-$user = "DAMphe#1878*";
-$password = "";
+$user = "root";
+$password = "DAMphe#1878*";
 $database = "iit";
 $server = "localhost";
 
