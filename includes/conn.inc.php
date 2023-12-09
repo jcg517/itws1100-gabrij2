@@ -1,11 +1,8 @@
 <?php
-$user = "root";
+$user = "DAMphe#1878*";
 $password = "";
-$database = "mySite";
+$database = "iit";
 $server = "localhost";
-
-$loggedInUser = "test";
-
 
 $dbOk = false;
 @$conn = new mysqli($server, $user, $password, $database);
